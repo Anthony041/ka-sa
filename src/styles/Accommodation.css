@@ -1,0 +1,29 @@
+.accommodation {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(255, 98, 99, 1) 0%, rgba(131, 49, 51, 1) 100%);
+    border-radius: 10px;
+    margin: 25px;
+    padding-bottom: 20px;
+}
+
+.accommodation img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+
+.accommodation p {
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    height: 52px;
+    color: white;
+    margin: 0 20px 0 20px;
+}

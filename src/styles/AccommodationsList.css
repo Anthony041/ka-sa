@@ -1,0 +1,10 @@
+.accommodations-list {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background: #F7F7F7;
+	border-radius: 25px;
+	padding: 25px;
+	margin-top: 43px;
+}
