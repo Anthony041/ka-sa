@@ -1,0 +1,41 @@
+.error {
+    text-align: center;
+}
+
+.code-error {
+    font-weight: 700;
+    font-size: 288px;
+    margin: 146px 0 66px 0;
+}
+
+.text-error {
+    font-size: 36px;
+    margin-bottom: 182px;
+}
+
+.redirect-link {
+    font-size: 18px;
+    margin-bottom: 159px;
+}
+
+.redirect-link a {
+    color: #FF6060;
+}
+
+/* smartphone */
+@media screen and (max-width: 767px) {
+    .code-error {
+        font-size: 96px;
+        margin: 199px 0 11px 0;
+    }
+
+    .text-error {
+        font-size: 18px;
+        margin-bottom: 133px;
+    }
+
+    .redirect-link {
+        font-size: 14px;
+        margin-bottom: 235px;
+    }
+}
