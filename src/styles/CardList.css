@@ -1,0 +1,18 @@
+.card-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background: #F7F7F7;
+	border-radius: 25px;
+	margin: 43px 0 43px 0;
+	padding: 25px;
+}
+
+/* smartphone */
+@media screen and (max-width: 767px) {
+	.card-list {
+		background: white;
+		margin: 22px 0 22px 0;
+		padding: 0;
+	}
+}

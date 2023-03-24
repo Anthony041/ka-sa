@@ -1,23 +1,52 @@
-.header {
+header {
+	margin: 40px 100px 0 100px;
 	display: flex;
-	height: 171px;
+	height: 131px;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.header ul {
-	width: 289px;
+header ul {
+	width: 269px;
 	display: flex;
 	justify-content: space-between;
 	padding: 0;
 }
 
-.header li {
+header li {
 	list-style: none;
 	font-weight: 500;
 	font-size: 24px;
 }
 
-.header a {
+header a {
 	color: #FF6060;
+}
+
+/* desktop & tablet */
+@media screen and (min-width: 768px) {
+	.small-logo {
+		display: none;
+	}
+}
+
+/* smartphone */
+@media screen and (max-width: 767px) {
+	header {
+		margin: 20px 20px 20px 20px;
+		height: 63px;
+	}
+
+	.normal-logo {
+		display: none;
+	}
+
+	header ul {
+		width: 140px;
+	}
+
+	header li {
+		text-transform: uppercase;
+		font-size: 12px;
+	}
 }

@@ -1,0 +1,29 @@
+footer {
+    margin: 0;
+    padding: 0;
+    background: black;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    margin-top: 66px;
+}
+
+footer p {
+    margin-bottom: 29px;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+}
+
+/* smartphone */
+@media screen and (max-width: 767px) {
+    footer p {
+        margin-bottom: 62px;
+        font-size: 12px;
+    }
+}
