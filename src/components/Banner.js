@@ -1,9 +1,9 @@
 import "../styles/Banner.css";
 
-function Banner() {
+function Banner({ text, page }) {
   return (
-    <div className="banner">
-      <p>Chez vous, partout et ailleurs</p>
+    <div className="banner" id={page}>
+      <p>{text}</p>
     </div>
   );
 }
