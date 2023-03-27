@@ -1,14 +1,24 @@
 import arrow from "../assets/arrow.png";
 import "../styles/Collapse.css";
 
-function Collapse({ titre, texte }) {
+function Collapse({ title, textType, text }) {
   return (
-    <div className="collapse" id={titre}>
+    <div className="collapse">
       <div className="title">
-        <h2>{titre}</h2>
-        <img src={arrow} alt="arrow icon"></img>
+        <h2>{title}</h2>
+        <img src={arrow} alt="arrow icon" />
       </div>
-      <p>{texte}</p>
+      <div className="text">
+        {textType === "paragraph" ? (
+          <p>{text}</p>
+        ) : (
+          <ul>
+            {text.map((equipment) => (
+              <li key={equipment}>{equipment}</li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   );
 }

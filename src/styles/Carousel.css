@@ -1,0 +1,25 @@
+.carousel {
+    margin-bottom: 30px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+/* smartphone */
+@media screen and (max-width: 767px) {
+    .carousel {
+        margin-bottom: 15px;
+    }
+    
+    .carousel img {
+        width: 100%;
+        height: 255px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}

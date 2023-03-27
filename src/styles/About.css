@@ -1,0 +1,18 @@
+.aboutCollapses {
+    margin: 0 108px 46px 108px;
+}
+
+.aboutCollapses .collapse {
+    margin: 33px 0 0 0;
+}
+
+/* smartphone */
+@media screen and (max-width: 767px) {
+    .aboutCollapses {
+        margin: 0 0 46px 0;
+    }
+
+    .aboutCollapses .collapse {
+        margin: 19px 0 0 0;
+    }
+}

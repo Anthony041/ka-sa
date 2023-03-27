@@ -1,0 +1,35 @@
+.tags {
+    margin: 20px 0 24px 0;
+}
+
+.tags ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.tags li {
+    background: #FF6060;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    width: 115px;
+    padding: 4px 0 4px 0;
+    border-radius: 10px;
+    margin: 0 10px 0 0;
+}
+
+/* smartphone */
+@media screen and (max-width: 767px) {
+    .tags {
+        margin: 20px 0 27px 0;
+    }
+
+    .tags li {
+        font-size: 10px;
+        width: 84px;
+        padding: 2px 0 2px 0;
+        border-radius: 5px;
+    }
+}

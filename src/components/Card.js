@@ -3,7 +3,7 @@ import "../styles/Card.css";
 function Card({ cover, title }) {
   return (
     <div className="card">
-      <img src={cover} alt={title}></img>
+      <img src={cover} alt={title} />
       <p>{title}</p>
     </div>
   );

@@ -1,0 +1,29 @@
+.host {
+    display: flex;
+    align-items: flex-start;
+}
+
+.host p {
+    width: 93px;
+    margin: 8px 0 0 0;
+    font-size: 18px;
+}
+
+.host img {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+}
+
+/* smartphone */
+@media screen and (max-width: 767px) {
+    .host p {
+        font-size: 12px;
+    }
+
+    .host img {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+    }
+}

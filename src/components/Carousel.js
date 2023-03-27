@@ -1,7 +1,11 @@
 import "../styles/Carousel.css";
 
-function Carousel() {
-  return <div></div>;
+function Carousel({ accommodation }) {
+  return (
+    <div className="carousel">
+      <img src={accommodation.cover} alt="cover" />
+    </div>
+  );
 }
 
 export default Carousel;
