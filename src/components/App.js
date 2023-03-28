@@ -1,11 +1,11 @@
-import "../styles/index.css";
+import accommodations from "../datas/logements.json";
 import Header from "./Header";
 import Home from "./Home";
 import Sheet from "./Sheet";
 import Error from "./Error";
 import About from "./About";
 import Footer from "./Footer";
-import accommodations from "../datas/logements.json";
+import "../styles/index.css";
 
 function App() {
   return (
