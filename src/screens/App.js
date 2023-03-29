@@ -1,10 +1,10 @@
 import accommodations from "../datas/logements.json";
-import Header from "./Header";
+import Header from "../components/Header";
 import Home from "./Home";
 import Sheet from "./Sheet";
 import Error from "./Error";
 import About from "./About";
-import Footer from "./Footer";
+import Footer from "../components/Footer";
 import "../styles/index.css";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Home />
       <div className="border"></div>
-      <Sheet accommodation={accommodations[0]} />
+      <Sheet accommodation={accommodations[1]} />
       <div className="border"></div>
       <Error />
       <div className="border"></div>

@@ -1,5 +1,5 @@
-import Banner from "./Banner";
-import CardList from "./CardList";
+import Banner from "../components/Banner";
+import CardList from "../components/CardList";
 
 function Home() {
   return (

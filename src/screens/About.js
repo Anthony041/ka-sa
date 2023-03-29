@@ -1,5 +1,5 @@
-import Banner from "./Banner";
-import Collapse from "./Collapse";
+import Banner from "../components/Banner";
+import Collapse from "../components/Collapse";
 import "../styles/About.css";
 
 function About() {

@@ -21,33 +21,11 @@
     text-align: center;
 }
 
-/* tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    #home {
-        height: 196px;
-    }
-
-    .banner p {
-        line-height: 196px;
-        font-size: 36px;
-    }
-}
-
 /* smartphone */
 @media screen and (max-width: 767px) {
     #home {
         height: 111px;
     }
-
-    .banner p {
-        line-height: 111px;
-        font-size: 24px;
-        text-align: center;
-    }
-}
-
-/* small smartphone */
-@media screen and (max-width: 420px) {
     .banner p {
         line-height: 24px;
         font-size: 24px;

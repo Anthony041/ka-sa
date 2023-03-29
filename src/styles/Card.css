@@ -28,8 +28,8 @@
     margin: 0 20px 0 20px;
 }
 
-/* small smartphone */
-@media screen and (max-width: 420px) {
+/* smartphone */
+@media screen and (max-width: 767px) {
     .card {
         height: 335px;
         width: 100%;

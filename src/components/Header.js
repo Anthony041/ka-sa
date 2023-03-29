@@ -5,8 +5,14 @@ import "../styles/Header.css";
 function Header() {
   return (
     <header>
-      <img className="normal-logo" src={logo} alt="red Kasa logo" />
-      <img className="small-logo" src={smallLogo} alt="red Kasa logo" />
+
+      {/* affichage de l'un ou l'autre des logos en fonction de la taille de l'écran */}
+      {window.innerWidth > 767 ? (
+        <img className="normal-logo" src={logo} alt="red Kasa logo" />
+      ) : (
+        <img className="small-logo" src={smallLogo} alt="red Kasa logo" />
+      )}
+
       <ul>
         <li>
           <a href="http://localhost:3000/">Accueil</a>

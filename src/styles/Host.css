@@ -1,12 +1,13 @@
 .host {
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-end;
 }
 
 .host p {
     width: 93px;
-    margin: 8px 0 0 0;
+    margin: 8px 10px 0 0;
     font-size: 18px;
+    text-align: right;
 }
 
 .host img {

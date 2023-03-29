@@ -15,9 +15,16 @@
 }
 
 .title img {
-    transform: rotate(90deg);
     width: 14px;
     margin-right: 33px;
+}
+
+.open-collapse {
+    transform: rotate(90deg);
+}
+
+.closed-collapse {
+    transform: rotate(270deg);
 }
 
 .text {
