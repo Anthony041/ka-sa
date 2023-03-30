@@ -1,13 +1,12 @@
+import { Link } from "react-router-dom";
 import "../styles/Card.css";
 
-function Card({ cover, title }) {
+function Card({ accommodation }) {
   return (
-    <a
-    href="http://localhost:3000/"
-    className="card">
-      <img src={cover} alt={title} />
-      <p>{title}</p>
-    </a>
+    <Link className="card" to="/sheet">
+      <img src={accommodation.cover} alt={accommodation.title} />
+      <p>{accommodation.title}</p>
+    </Link>
   );
 }
 

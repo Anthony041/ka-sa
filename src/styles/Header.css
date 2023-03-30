@@ -6,7 +6,7 @@ header {
 	align-items: center;
 }
 
-header ul {
+header nav {
 	width: 269px;
 	display: flex;
 	justify-content: space-between;
@@ -30,7 +30,7 @@ header a {
 		height: 63px;
 	}
 
-	header ul {
+	header nav {
 		width: 140px;
 	}
 
