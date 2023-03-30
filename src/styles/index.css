@@ -16,10 +16,6 @@ main {
   margin: 0 100px 0 100px;
 }
 
-.border {
-  border: solid 5px orange;
-}
-
 /* smartphone */
 @media screen and (max-width: 767px) {
   main {

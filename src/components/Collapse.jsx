@@ -6,7 +6,7 @@ function Collapse({ title, textType, text }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
 
-    // titre et icones
+    // titre et icône ouvert/fermé
     <div className="collapse">
       <div
         className="title"
@@ -20,9 +20,10 @@ function Collapse({ title, textType, text }) {
         />
       </div>
 
-      {/* texte à afficher ou non en fonction de l'état de la collapse */}
+      {/* texte à afficher ou non en fonction de l'état de la collapse ouvert/fermé */}
       {isOpen ? (
         <div className="text">
+          {/* soit c'est un texte, soit c'est une liste (dans le cas des équipements) */}
           {textType === "paragraph" ? (
             <p>{text}</p>
           ) : (
