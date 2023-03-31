@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/red-logo.png";
 import smallLogo from "../assets/small-red-logo.png";
 import "../styles/Header.css";
 
 function Header() {
+  const location = useLocation();
+
   return (
     <header>
       {/* affichage de l'un ou l'autre des logos en fonction de la taille de l'écran */}
@@ -15,10 +17,24 @@ function Header() {
 
       <nav>
         <li>
-          <Link to="/">Accueil</Link>
+          <Link
+            className={
+              !/^\/(about|sheet|error)/.test(location.pathname)
+                ? "underline"
+                : ""
+            }
+            to="/"
+          >
+            Accueil
+          </Link>
         </li>
         <li>
-          <Link to="/about">A propos</Link>
+          <Link
+            className={location.pathname.includes("about") ? "underline" : ""}
+            to="/about"
+          >
+            A propos
+          </Link>
         </li>
       </nav>
     </header>

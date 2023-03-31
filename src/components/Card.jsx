@@ -3,7 +3,7 @@ import "../styles/Card.css";
 
 function Card({ accommodation }) {
   return (
-    <Link className="card" to="/sheet">
+    <Link className="card" to={`/sheet/${accommodation.id}`}>
       <img src={accommodation.cover} alt={accommodation.title} />
       <p>{accommodation.title}</p>
     </Link>

@@ -1,3 +1,5 @@
+import { useParams, Navigate } from "react-router-dom";
+import accommodations from "../datas/logements.json";
 import Carousel from "../components/Carousel";
 import Collapse from "../components/Collapse";
 import Host from "../components/Host";
@@ -5,7 +7,15 @@ import Tags from "../components/Tags";
 import Rating from "../components/Rating";
 import "../styles/Sheet.css";
 
-function Sheet({ accommodation }) {
+function Sheet() {
+  const { id } = useParams();
+  const accommodation = accommodations.find((element) => element.id === id);
+
+  // redirection vers la page d'erreur si un utilisateur modifiait l'id de la page /sheet en indiquant un id n'existant pas
+  if (!accommodation) {
+    return <Navigate to="/error" />;
+  }
+
   return (
     <main>
       <Carousel accommodation={accommodation} />

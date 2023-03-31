@@ -23,6 +23,10 @@ header a {
 	text-decoration: none;
 }
 
+.underline {
+	text-decoration: underline;
+}
+
 /* smartphone */
 @media screen and (max-width: 767px) {
 	header {
