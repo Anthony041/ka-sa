@@ -1,14 +1,9 @@
 .card {
     height: 300px;
     width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: linear-gradient(180deg, rgba(255, 98, 99, 1) 0%, rgba(131, 49, 51, 1) 100%);
-    border-radius: 10px;
     margin: 25px;
-    padding-bottom: 20px;
-    text-decoration: none;
+    border-radius: 10px;
+    position: relative;
 }
 
 .card img {
@@ -16,16 +11,22 @@
     width: 100%;
     object-fit: cover;
     align-self: center;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .card p {
+    width: 260px;
     text-align: left;
+    text-decoration: none;
     font-size: 18px;
-    height: 52px;
+    height: 42px;
     color: white;
-    margin: 0 20px 0 20px;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.45);
+    border-radius: 0 0 10px 10px;
 }
 
 /* smartphone */
@@ -34,5 +35,9 @@
         height: 335px;
         width: 100%;
         margin: 0 0 25px 0;
+    }
+
+    .card p {
+        width: 310px;
     }
 }
