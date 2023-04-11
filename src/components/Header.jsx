@@ -17,20 +17,13 @@ function Header() {
 
       <nav>
         <li>
-          <Link
-            className={
-              !/^\/(about|sheet|error)/.test(location.pathname)
-                ? "underline"
-                : ""
-            }
-            to="/"
-          >
+          <Link className={location.pathname === "/" ? "underline" : ""} to="/">
             Accueil
           </Link>
         </li>
         <li>
           <Link
-            className={location.pathname.includes("about") ? "underline" : ""}
+            className={location.pathname === "/about" ? "underline" : ""}
             to="/about"
           >
             A propos
